@@ -17,13 +17,10 @@
             </intent-filter>
         </activity>
 
-        //Khai báo service
         <service android:name=".ServiceNotification"/>
 
-        // Khai báo Broadcast
         <receiver android:name=".NotificationBroadcast">
             <intent-filter>
-                //Đặt tên action
                 <action android:name="SyncUngDung" />
             </intent-filter>
         </receiver>
